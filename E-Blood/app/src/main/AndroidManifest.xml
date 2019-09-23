@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.phntechnology.e_blood">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Panel"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:parentActivityName=".Welcome" />
+        <activity
+            android:name=".Login"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".Update_Profile"
+            android:parentActivityName=".Panel" />
+        <activity
+            android:name=".Donate_Blood"
+            android:parentActivityName=".Panel" />
+        <activity android:name=".Confirm" />
+        <activity
+            android:name=".Search_Donor"
+            android:parentActivityName=".Panel" />
+        <activity android:name=".Search_Result" />
+        <activity
+            android:name=".Change_Password"
+            android:parentActivityName=".Panel" />
+        <activity
+            android:name=".Login_Details"
+            android:parentActivityName=".Register" />
+        <activity
+            android:name=".Donor_Details"
+            android:parentActivityName=".Search_Donor" />
+        <activity
+            android:name=".About"
+            android:parentActivityName=".Panel" />
+        <activity
+            android:name=".Remove_Donor"
+            android:parentActivityName=".Panel" />
+        <activity
+            android:name=".Upload_Report"
+            android:parentActivityName=".Panel" />
+        <activity android:name=".Display_Report" />
+        <activity android:name=".Get_IP"></activity>
+        <activity android:name=".Donated"
+            android:parentActivityName=".Panel"></activity>
+    </application>
+
+</manifest>
